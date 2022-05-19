@@ -13,11 +13,13 @@ export default function BasicTextFields() {
       noValidate
       autoComplete="off"
     > 
+    <div>
       <h2>Login</h2>
       <TextField id="outlined-basic" label="Username or Email" variant="outlined" /><br></br>
       <TextField id="outlined-basic" label="Password" variant="outlined" /><br></br>
       
       <Button variant="contained">login</Button>
+      </div>
     </Box>
   );
 }
