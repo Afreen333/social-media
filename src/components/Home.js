@@ -13,7 +13,17 @@ export default function ButtonAppBar(props) {
         return (
     
     <>
-    <Box sx={{ flexGrow: 1 }}>
+    
+    <Profile/>
+    <h2>FEED</h2>
+    <Posts/>
+    <Posts/>
+    <Posts/>
+    </>
+  );
+  else 
+  return(<><p>please login or sign up to continue!</p>
+  <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -28,13 +38,5 @@ export default function ButtonAppBar(props) {
         </Toolbar>
       </AppBar>
     </Box>
-    <Profile/>
-    <h2>FEED</h2>
-    <Posts/>
-    <Posts/>
-    <Posts/>
-    </>
-  );
-  else 
-  return(<p>please login or sign up to continue!</p>)
+    </>)
 }
