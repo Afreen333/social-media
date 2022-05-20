@@ -4,15 +4,14 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
 import Profile from './Profile';
-
 import Posts from './Posts';
-
 import { Link } from 'react-router-dom'
 
-export default function ButtonAppBar() {
-  return (
+export default function ButtonAppBar(props) {
+  if(props.isLoggedin=="true")
+        return (
+    
     <>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -36,4 +35,6 @@ export default function ButtonAppBar() {
     <Posts/>
     </>
   );
+  else 
+  return(<p>please login or sign up to continue!</p>)
 }
